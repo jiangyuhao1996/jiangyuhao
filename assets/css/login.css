@@ -1,0 +1,47 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background: url(/assets/images/login_bg.jpg);
+}
+
+.active{
+    display: block !important;
+}
+
+header{
+    padding-top: 20px;
+}
+
+.box{
+    width: 400px;
+    height: 310px;
+    padding: 0 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title{
+    height: 60px;
+    background: url(/assets/images/login_title.png) no-repeat center;
+}
+.icon{
+    position: relative;
+}
+.icon i{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+.ipt{
+    text-indent: 12px;
+}
+.gotoRegi,.gotoLogin{
+    display: block;
+    text-align: right;
+}
