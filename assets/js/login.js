@@ -29,13 +29,14 @@ $(function(){
         let data = $(this).serialize()
 
         $.ajax({
-            url: "http://ajax.frontend.itheima.net/api/login",
+            url: "/api/login",
             type: "post",
             data,
             success: function(res){
                 if(res.status !== 0){
                     return layer.msg(res.message)
                 }
+                localStorage.setItem("token",res.token)
                 layer.msg("登陆成功，两秒后进行跳转",{time:2000},function(){
                     location.href = "./index.html"
                 })
@@ -51,7 +52,7 @@ $(function(){
         // console.log(data)
 
         $.ajax({
-            url: "http://ajax.frontend.itheima.net/api/reguser",
+            url: "/api/reguser",
             type: "post",
             data,
             success: function(res){

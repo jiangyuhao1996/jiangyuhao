@@ -1,0 +1,29 @@
+.avatar{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+.avatarDef{
+    width: 40px;
+    height: 40px;
+}
+.nav-avatar{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.nav-avatar .avatar{
+    margin-right: 5px;
+}
+.nav-avatar span{
+    color: #fff;
+}
+[name="layuiBody"]{
+    width: 100%;
+    height: 100%;
+}
